@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003848-blue)](https://doi.org/10.82901/nemar.on003848)
+
 Dataset description
 This dataset is part of a bigger dataset of intracranial EEG (iEEG)  called RESPect (Registry for Epilepsy Surgery Patients), a dataset recorded at the University Medical Center of Utrecht, the Netherlands.
 It consists of 12 patients: six patients recorded intraoperatively using electrocorticography (acute ECoG), six patients with long-term recordings (3 patients recorded with ECoG and 3 patients recorded with stereo-encephalography SEEG). For a detailed description see Demuru M, van Blooijs D, Zweiphenning W, Hermes D, Leijten F, Zijlmans M, on behalf of the RESPect group. “A practical workflow for organizing clinical intraoperative and long-term iEEG data in BIDS“, submitted to NeuroInformatics in 2020.
