@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
-  "description": "This dataset comprises intracranial EEG (iEEG) recordings from 12 epilepsy surgery patients enrolled in the RESPect (Registry for Epilepsy Surgery Patients) study at the University Medical Center of Utrecht. The collection includes both intraoperative electrocorticography (ECoG) recordings from six patients and long-term iEEG monitoring data from six patients (three with ECoG and three with stereo-encephalography). All data are organized according to the Brain Imaging Data Structure (BIDS) specification to facilitate standardized access and analysis of clinical neurophysiology data. This dataset is derived from the OpenNeuro source dataset (10.18112/openneuro.ds003848.v1.0.3).",
-  "methods_description": "Intracranial EEG recordings were acquired during epilepsy surgery procedures (intraoperative ECoG) and during long-term clinical monitoring periods. Intraoperative recordings were organized into sessions corresponding to pre-resection, intermediate, and post-resection surgical phases. Long-term recordings were grouped by monitoring period with runs indicating specific days and time points. Electrode configurations included grids, strips, depth electrodes (ECoG), and stereo-encephalography (SEEG) probes.",
+  "description": "This dataset comprises intracranial EEG (iEEG) recordings from 12 epilepsy surgery patients enrolled in the RESPect (Registry for Epilepsy Surgery Patients) study at the University Medical Center of Utrecht. The collection includes intraoperative electrocorticography (ECoG) recordings from six patients and long-term iEEG monitoring data from six patients (three with ECoG and three with stereo-encephalography). All data are organized according to the Brain Imaging Data Structure (BIDS) specification to facilitate standardized access and analysis of clinical neurophysiology data. This dataset is derived from the larger RESPect iEEG collection and has been curated for BIDS compliance.",
+  "methods_description": "Intracranial EEG recordings were acquired during epilepsy surgery procedures (intraoperative ECoG) and during long-term clinical monitoring periods. Intraoperative recordings were organized into sessions corresponding to pre-resection, intermediate, and post-resection surgical phases. Long-term recordings were grouped by monitoring period with runs indicating specific days and times of acquisition. Electrode configurations included grids, strips, and depth electrodes for ECoG, and depth electrodes for stereo-encephalography (SEEG). Data were converted to BIDS format following the practical workflow described in Demuru et al. (2021).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,9 +28,6 @@
       "term": "epilepsy surgery"
     },
     {
-      "term": "epilepsy"
-    },
-    {
       "term": "clinical neurophysiology"
     },
     {
@@ -40,13 +37,19 @@
       "term": "RESPect"
     },
     {
-      "term": "intraoperative monitoring"
+      "term": "electrode grids"
+    },
+    {
+      "term": "depth electrodes"
+    },
+    {
+      "term": "intraoperative recording"
     },
     {
       "term": "long-term monitoring"
     },
     {
-      "term": "University Medical Center Utrecht"
+      "term": "surgical epilepsy"
     }
   ],
   "related_identifiers": [
@@ -64,6 +67,11 @@
       "identifier": "10.18112/openneuro.ds003848.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1038/s41597-021-00862-6",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -71,11 +79,16 @@
       "funder_name": "Epi-Sign Project"
     },
     {
-      "funder_name": "Alexandre Suerman Stipendium 2015"
+      "funder_name": "EpilepsieNL",
+      "award_number": "#17-07"
+    },
+    {
+      "funder_name": "Alexandre Suerman Stipendium",
+      "award_number": "2015"
     },
     {
       "funder_name": "EpilepsieNL",
-      "award_number": "#17-07"
+      "award_number": "17-07"
     }
   ],
   "resource_type_specific": "Structural MRI Dataset",
