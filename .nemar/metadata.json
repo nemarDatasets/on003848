@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on003848",
-  "source": "openneuro",
-  "source_id": "ds003848",
+  "pipeline_stage": "enriched",
   "title": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "van Blooijs D.": {},
     "Demuru M.": {},
@@ -12,35 +12,130 @@
     "Leijten F.": {},
     "Zijlmans M.": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003848.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003848",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003848",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "Brain Imaging Data Structure Specification v1.6.0",
-  "recording_modality": [
-    "anat",
-    "ieeg"
-  ],
-  "datatypes": [
-    "anat",
-    "ieeg"
   ],
   "funding_references": [
     {
       "funder_name": "Epi-Sign Project"
     },
     {
-      "funder_name": "Alexandre Suerman Stipendium 2015"
+      "funder_name": "Alexandre Suerman Stipendium",
+      "award_number": "2015"
     },
     {
-      "funder_name": "EpilepsieNL #17-07"
+      "funder_name": "EpilepsieNL",
+      "award_number": "17-07"
     }
   ],
-  "acknowledgements": "Huiskamp G.J.M."
+  "modalities": [
+    "anat",
+    "ieeg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".H",
+    ".K",
+    ".TRC",
+    ".annot",
+    ".area",
+    ".avg_curv",
+    ".bak",
+    ".cmd",
+    ".crv",
+    ".ctab",
+    ".curv",
+    ".dat",
+    ".defect_borders",
+    ".defect_chull",
+    ".defect_labels",
+    ".done",
+    ".eeg",
+    ".env",
+    ".gii",
+    ".inflated",
+    ".jacobian_white",
+    ".json",
+    ".label",
+    ".local-copy",
+    ".log",
+    ".lta",
+    ".m3z",
+    ".md",
+    ".mgh",
+    ".mgz",
+    ".mid",
+    ".nii",
+    ".nofix",
+    ".old",
+    ".orig",
+    ".pial",
+    ".preaparc",
+    ".reg",
+    ".smoothwm",
+    ".sphere",
+    ".stats",
+    ".sulc",
+    ".thickness",
+    ".touch",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".volume",
+    ".white",
+    ".xfm"
+  ],
+  "description": "This dataset comprises intracranial EEG recordings from 12 epilepsy surgery patients enrolled in the RESPect (Registry for Epilepsy Surgery Patients) study at the University Medical Center of Utrecht. The collection includes recordings from 12 total patients: 6 patients with intraoperative electrocorticography (ECoG) and 6 patients with long-term recordings (3 ECoG and 3 stereo-encephalography). All data are organized according to the Brain Imaging Data Structure (BIDS) specification to facilitate standardized access and analysis of clinical neurophysiology data.",
+  "methods_description": "Intracranial EEG recordings were acquired during epilepsy surgery procedures (intraoperative ECoG) and during long-term clinical monitoring periods (ECoG and stereo-encephalography). Intraoperative recordings were organized into sessions corresponding to pre-resection, intermediate, and post-resection surgical phases. Long-term recordings were grouped by monitoring period with runs indicating specific days and times of acquisition.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "electrocorticography"
+    },
+    {
+      "term": "stereo-encephalography"
+    },
+    {
+      "term": "epilepsy surgery"
+    },
+    {
+      "term": "clinical neurophysiology"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "epilepsy"
+    },
+    {
+      "term": "RESPect"
+    },
+    {
+      "term": "intraoperative"
+    },
+    {
+      "term": "long-term monitoring"
+    }
+  ],
+  "source_hash": "afcab1233bc462272dc6753bedeb1de5796c6221c67709d40584c1e94dbc3cba"
 }
