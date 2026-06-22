@@ -1,0 +1,46 @@
+{
+  "version": "2.0",
+  "dataset_id": "on003848",
+  "source": "openneuro",
+  "source_id": "ds003848",
+  "title": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
+  "authors": {
+    "van Blooijs D.": {},
+    "Demuru M.": {},
+    "Zweiphenning W": {},
+    "Hermes D.": {},
+    "Leijten F.": {},
+    "Zijlmans M.": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds003848.v1.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "Brain Imaging Data Structure Specification v1.6.0",
+  "recording_modality": [
+    "anat",
+    "ieeg"
+  ],
+  "datatypes": [
+    "anat",
+    "ieeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Epi-Sign Project"
+    },
+    {
+      "funder_name": "Alexandre Suerman Stipendium 2015"
+    },
+    {
+      "funder_name": "EpilepsieNL #17-07"
+    }
+  ],
+  "acknowledgements": "Huiskamp G.J.M."
+}
