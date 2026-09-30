@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
-  "description": "This dataset comprises intracranial EEG (iEEG) recordings from 12 epilepsy surgery patients enrolled in the RESPect (Registry for Epilepsy Surgery Patients) study at the University Medical Center of Utrecht. The collection includes intraoperative electrocorticography (ECoG) recordings from six patients and long-term iEEG monitoring data from six patients (three with ECoG and three with stereo-encephalography). All data are organized according to the Brain Imaging Data Structure (BIDS) specification to facilitate standardized access and analysis of clinical neurophysiology data. This dataset is derived from the larger RESPect iEEG collection and has been curated for BIDS compliance.",
-  "methods_description": "Intracranial EEG recordings were acquired during epilepsy surgery procedures (intraoperative ECoG) and during long-term clinical monitoring periods. Intraoperative recordings were organized into sessions corresponding to pre-resection, intermediate, and post-resection surgical phases. Long-term recordings were grouped by monitoring period with runs indicating specific days and times of acquisition. Electrode configurations included grids, strips, and depth electrodes for ECoG, and depth electrodes for stereo-encephalography (SEEG). Data were converted to BIDS format following the practical workflow described in Demuru et al. (2021).",
+  "description": "A clinical intracranial EEG (iEEG) dataset from 12 epilepsy surgery patients drawn from the RESPect (Registry for Epilepsy Surgery Patients) collection at the University Medical Center Utrecht. It includes six intraoperative ECoG recordings and six long-term recordings (three ECoG, three SEEG). The data are organized in BIDS, with session and run conventions that capture the surgical stage or the monitoring day and time, and the task labels describe the patient's state.",
+  "methods_description": "Intraoperative ECoG was grouped into BIDS sessions by surgical situation (pre-resection, intermediate, post-resection) and grid position. Long-term monitoring recordings were grouped into sessions per monitoring period, with runs encoding the day and start time. Task labels (rest, sleep, SPESclin) describe the patient's state during each recording.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,40 +16,29 @@
   },
   "keywords": [
     {
-      "term": "intracranial EEG"
+      "term": "iEEG"
     },
     {
-      "term": "electrocorticography"
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
     {
-      "term": "stereo-encephalography"
+      "term": "stereo-electroencephalography"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
       "term": "epilepsy surgery"
     },
     {
-      "term": "clinical neurophysiology"
-    },
-    {
       "term": "BIDS"
     },
     {
-      "term": "RESPect"
-    },
-    {
-      "term": "electrode grids"
-    },
-    {
-      "term": "depth electrodes"
-    },
-    {
-      "term": "intraoperative recording"
-    },
-    {
       "term": "long-term monitoring"
-    },
-    {
-      "term": "surgical epilepsy"
     }
   ],
   "related_identifiers": [
@@ -59,18 +48,13 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003848",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003848.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
     },
     {
-      "identifier": "10.1038/s41597-021-00862-6",
-      "identifier_type": "DOI",
+      "identifier": "https://nemar.org/dataset/on003848",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
@@ -79,16 +63,11 @@
       "funder_name": "Epi-Sign Project"
     },
     {
+      "funder_name": "Alexandre Suerman Stipendium 2015"
+    },
+    {
       "funder_name": "EpilepsieNL",
       "award_number": "#17-07"
-    },
-    {
-      "funder_name": "Alexandre Suerman Stipendium",
-      "award_number": "2015"
-    },
-    {
-      "funder_name": "EpilepsieNL",
-      "award_number": "17-07"
     }
   ],
   "resource_type_specific": "Structural MRI Dataset",
@@ -97,7 +76,7 @@
     "ieeg"
   ],
   "sizes": [
-    "106.3 GB (1984 files)"
+    "99.03 GB (1984 files)"
   ],
   "formats": [
     ".H",
