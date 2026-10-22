@@ -39,3 +39,13 @@ Code available at: https://github.com/UMCU-EpiLAB.
 Acknowledgements
 We would like to thank the patients for providing their data for this dataset, the RESPect team of University Medical Center of Utrecht, for the acquisition of the dataset.
 Please cite Demuru M, van Blooijs D, Zweiphenning W, Hermes D, Leijten F, Zijlmans M, on behalf of the RESPect group. “A practical workflow for organizing clinical intraoperative and long-term iEEG data in BIDS“, submitted to NeuroInformatics in 2020, in any publications.
+
+## Channel names follow the data headers (18 Oct 2026)
+
+In 2 recordings the channel list of channels.tsv did not equal the data-file header (names, order or count), so `mne_bids.read_raw_bids` stopped with 'Channel mismatch' (or 'Duplicate channel names'); EEGDash renamed the data channels by position to the channels.tsv names, which gives wrong labels wherever the two lists are not aligned. Since 18 Oct 2026 every channels.tsv lists exactly the header channels, in header order, with the header names (MNE names: duplicated header labels numbered -0, -1).
+
+Rows were matched to header channels BY NAME, never by position (exact; then case/whitespace; then the recorder prefix 'EEG '/'POL ', '_' and zero padding; then a trailing '-<reference>' token). Matched rows keep all their columns (type, units, status, ...); 2 rows took the header name.
+
+## Electrode locations (19 Oct 2026; revised 22 Oct 2026)
+
+sub-RESP0724 ses-1 has an electrodes.tsv but, in the deposit, no coordsystem.json. This branch adds one that declares `Other` / `mm` and states its limitation in `iEEGCoordinateSystemDescription`: the frame of this subject's positions is not documented in the deposit or the cited paper (the five other subjects declare an individual RAS frame; this subject may use the same frame, but that is not confirmed); no anatomical image is associated (no `IntendedFor`); and `mm` is inferred from the spread of the positions, which is physically plausible only in millimetres. No coordinate value changed. This dataset mirrors OpenNeuro; the same change belongs upstream.

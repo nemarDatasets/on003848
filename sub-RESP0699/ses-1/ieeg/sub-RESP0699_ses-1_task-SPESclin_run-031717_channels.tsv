@@ -95,7 +95,7 @@ emg1+	EMG	µV	468	0.15	emg1-	other	2048	n/a	good	not included
 emg2+	EMG	µV	468	0.15	emg2-	other	2048	n/a	good	not included
 pB30+	OTHER	µV	468	0.15	pB30-	other	2048	n/a	bad	not recording
 .....	OTHER	µV	468	0.15	.....	other	2048	n/a	bad	not recording
-.....	OTHER	µV	468	0.15	.....	other	2048	n/a	bad	not recording
+.....-1	OTHER	µV	468	0.15	.....	other	2048	n/a	bad	not recording
 el097	OTHER	µV	468	0.15	G2	other	2048	n/a	bad	not recording
 el098	OTHER	µV	468	0.15	G2	other	2048	n/a	bad	not recording
 el099	OTHER	µV	468	0.15	G2	other	2048	n/a	bad	not recording

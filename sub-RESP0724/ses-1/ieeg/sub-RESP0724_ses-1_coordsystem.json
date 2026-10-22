@@ -1,0 +1,5 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "mm",
+  "iEEGCoordinateSystemDescription": "Frame not documented for this subject. The deposit has no coordinate-system file for sub-RESP0724, and neither the deposit nor the cited paper states the frame of this subject's electrodes.tsv. The deposit's five other subjects, processed with the same pipeline and the same electrodes.json text, declare an individual RAS frame (origin between the ears, no scaling or deformation of the individual anatomical scan); this subject may use the same frame, but that is not confirmed. No anatomical image is associated with these positions (no IntendedFor). Units: mm is inferred, not documented: the spread of the contact positions is physically plausible only in millimetres (not in metres or centimetres)."
+}
