@@ -1,4 +1,8 @@
 1.0.4 2026-10-22
+  - Correct generic event-schema task entities using existing source event-table filename tokens.
+    Retain 6 exact original schemas under sourcedata/generic-event-schemas at mirrored
+    relative paths and supply 16 exact-byte task-specific copies. No table, recording,
+    coordinate, clinical-value or ignore-rule changes.
   - 2026-10-19 electrode locations (revised 2026-10-22): add sub-RESP0724 ses-1 coordsystem.json (Other/mm; frame not documented for this subject and stated as such in its description; units inferred; no IntendedFor) (1 files). README: section 'Electrode locations'.
   - channels.tsv of 2 recordings = the data-file header channel list (name, order, count; matched by name): 2 rows renamed to the header name, 0 rows added, 0 rows removed, 0 files reordered. mne_bids read_raw_bids raised 'Channel mismatch'.
   - README: section 'Channel names follow the data headers'.
