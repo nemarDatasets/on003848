@@ -1,0 +1,218 @@
+{
+  "paths": {
+    "sub-RESP0521/ses-1/ieeg/sub-RESP0521_ses-1_space-fsaverage_coordsystem.json": {
+      "inputs": [
+        {
+          "blob": "1df3d681d6e75ed1dcd1ec07bd2f7a845da6e814",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/lh.pial"
+        },
+        {
+          "blob": "2aebcd184bd4cb16eb6f0a54abfdcb0264743800",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/lh.sphere.reg"
+        },
+        {
+          "blob": "032490c1a4cef057a6cee35cb33766c9a36a4da4",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/rh.pial"
+        },
+        {
+          "blob": "67896f6dda16b92444e726e7cf5574491568e9b5",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/rh.sphere.reg"
+        },
+        {
+          "blob": "acabb727e0562613fb806fffa1197436a6952448",
+          "path": "sub-RESP0521/ses-1/ieeg/sub-RESP0521_ses-1_coordsystem.json"
+        },
+        {
+          "blob": "bcce73d7a4214218fd59ed221487387fc823075d",
+          "path": "sub-RESP0521/ses-1/ieeg/sub-RESP0521_ses-1_electrodes.tsv"
+        }
+      ],
+      "kind": "coordsystem",
+      "method": "freesurfer-sphere-reg-fsaverage6",
+      "output_sha256": "564bb20e8a1ad079133449b0336d0ce0d84e2d6fa44e4fd0126bde1c1e9857fa",
+      "verification": {
+        "grade": "specific",
+        "inside_evaluated": false,
+        "inside_fraction": null,
+        "max_mm": 4.527,
+        "median_mm": 0.956,
+        "n_ambiguous": 0,
+        "n_left_out": 0,
+        "n_total": 64,
+        "n_used": 64,
+        "near_or_inside_fraction": null,
+        "offset_applied": [
+          -2.131,
+          -35.482,
+          -5.584
+        ],
+        "p90_mm": 2.048,
+        "passed": true,
+        "reason": null,
+        "reference": "subject pial surface",
+        "rule": "median <= 2.0 mm; on fsaverage6 vertices by construction; registration check: 2008 subject pial vertices mapped through sphere.reg: 99.3% on the correct hemisphere side, centroid 3.87 mm from fsaverage6 pial, extent within 4.2%, affine consistency residual median 7.23 mm; left out: 69 contacts without x, y, z; 2 cortical contacts more than 3.0 mm from the pial surface"
+      }
+    },
+    "sub-RESP0521/ses-1/ieeg/sub-RESP0521_ses-1_space-fsaverage_electrodes.tsv": {
+      "inputs": [
+        {
+          "blob": "1df3d681d6e75ed1dcd1ec07bd2f7a845da6e814",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/lh.pial"
+        },
+        {
+          "blob": "2aebcd184bd4cb16eb6f0a54abfdcb0264743800",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/lh.sphere.reg"
+        },
+        {
+          "blob": "032490c1a4cef057a6cee35cb33766c9a36a4da4",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/rh.pial"
+        },
+        {
+          "blob": "67896f6dda16b92444e726e7cf5574491568e9b5",
+          "path": "derivatives/freesurfer/sub-RESP0521/ses-1/sub-RESP0521_ses-1_T1w/surf/rh.sphere.reg"
+        },
+        {
+          "blob": "acabb727e0562613fb806fffa1197436a6952448",
+          "path": "sub-RESP0521/ses-1/ieeg/sub-RESP0521_ses-1_coordsystem.json"
+        },
+        {
+          "blob": "bcce73d7a4214218fd59ed221487387fc823075d",
+          "path": "sub-RESP0521/ses-1/ieeg/sub-RESP0521_ses-1_electrodes.tsv"
+        }
+      ],
+      "kind": "electrodes",
+      "method": "freesurfer-sphere-reg-fsaverage6",
+      "output_sha256": "1a2f39dda7b2d86d7235e36cd270b5373ee9215f8db54c988dbc1d459935fd93",
+      "verification": {
+        "grade": "specific",
+        "inside_evaluated": false,
+        "inside_fraction": null,
+        "max_mm": 4.527,
+        "median_mm": 0.956,
+        "n_ambiguous": 0,
+        "n_left_out": 0,
+        "n_total": 64,
+        "n_used": 64,
+        "near_or_inside_fraction": null,
+        "offset_applied": [
+          -2.131,
+          -35.482,
+          -5.584
+        ],
+        "p90_mm": 2.048,
+        "passed": true,
+        "reason": null,
+        "reference": "subject pial surface",
+        "rule": "median <= 2.0 mm; on fsaverage6 vertices by construction; registration check: 2008 subject pial vertices mapped through sphere.reg: 99.3% on the correct hemisphere side, centroid 3.87 mm from fsaverage6 pial, extent within 4.2%, affine consistency residual median 7.23 mm; left out: 69 contacts without x, y, z; 2 cortical contacts more than 3.0 mm from the pial surface"
+      }
+    },
+    "sub-RESP0699/ses-1/ieeg/sub-RESP0699_ses-1_space-fsaverage_coordsystem.json": {
+      "inputs": [
+        {
+          "blob": "2b5aed43a31e3752c2ae8fbefb91d33f4b84a4e1",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/lh.pial"
+        },
+        {
+          "blob": "f02b735686ace3e5bf96ff77982bb7011eaee442",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/lh.sphere.reg"
+        },
+        {
+          "blob": "2af1564d3288bf468272569a855244e72898f057",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/rh.pial"
+        },
+        {
+          "blob": "4ad23b50562a6a4f2f012954a138906f18074160",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/rh.sphere.reg"
+        },
+        {
+          "blob": "4854eca605d3b1c4b49c6c61ebb7eabbb1311280",
+          "path": "sub-RESP0699/ses-1/ieeg/sub-RESP0699_ses-1_coordsystem.json"
+        },
+        {
+          "blob": "f559bcea3b2fdff96853e8ec30703f1b8e821317",
+          "path": "sub-RESP0699/ses-1/ieeg/sub-RESP0699_ses-1_electrodes.tsv"
+        }
+      ],
+      "kind": "coordsystem",
+      "method": "freesurfer-sphere-reg-fsaverage6",
+      "output_sha256": "ac99024e18ab7ec6c287178907a8c73a6532f037e29b43f8f6e1309b110f706b",
+      "verification": {
+        "grade": "specific",
+        "inside_evaluated": false,
+        "inside_fraction": null,
+        "max_mm": 3.114,
+        "median_mm": 1.367,
+        "n_ambiguous": 0,
+        "n_left_out": 0,
+        "n_total": 64,
+        "n_used": 64,
+        "near_or_inside_fraction": null,
+        "offset_applied": [
+          -3.712,
+          -5.435,
+          -43.431
+        ],
+        "p90_mm": 2.145,
+        "passed": true,
+        "reason": null,
+        "reference": "subject pial surface",
+        "rule": "median <= 2.0 mm; on fsaverage6 vertices by construction; registration check: 2007 subject pial vertices mapped through sphere.reg: 99.0% on the correct hemisphere side, centroid 2.93 mm from fsaverage6 pial, extent within 3.6%, affine consistency residual median 6.25 mm; left out: 69 contacts without x, y, z; 1 cortical contacts more than 3.0 mm from the pial surface"
+      }
+    },
+    "sub-RESP0699/ses-1/ieeg/sub-RESP0699_ses-1_space-fsaverage_electrodes.tsv": {
+      "inputs": [
+        {
+          "blob": "2b5aed43a31e3752c2ae8fbefb91d33f4b84a4e1",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/lh.pial"
+        },
+        {
+          "blob": "f02b735686ace3e5bf96ff77982bb7011eaee442",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/lh.sphere.reg"
+        },
+        {
+          "blob": "2af1564d3288bf468272569a855244e72898f057",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/rh.pial"
+        },
+        {
+          "blob": "4ad23b50562a6a4f2f012954a138906f18074160",
+          "path": "derivatives/freesurfer/sub-RESP0699/ses-1/sub-RESP0699_ses-1_T1w/surf/rh.sphere.reg"
+        },
+        {
+          "blob": "4854eca605d3b1c4b49c6c61ebb7eabbb1311280",
+          "path": "sub-RESP0699/ses-1/ieeg/sub-RESP0699_ses-1_coordsystem.json"
+        },
+        {
+          "blob": "f559bcea3b2fdff96853e8ec30703f1b8e821317",
+          "path": "sub-RESP0699/ses-1/ieeg/sub-RESP0699_ses-1_electrodes.tsv"
+        }
+      ],
+      "kind": "electrodes",
+      "method": "freesurfer-sphere-reg-fsaverage6",
+      "output_sha256": "dffe3540c1d70b3eb32578c62d3fa4271dd7d38695df80983af55d38777c1618",
+      "verification": {
+        "grade": "specific",
+        "inside_evaluated": false,
+        "inside_fraction": null,
+        "max_mm": 3.114,
+        "median_mm": 1.367,
+        "n_ambiguous": 0,
+        "n_left_out": 0,
+        "n_total": 64,
+        "n_used": 64,
+        "near_or_inside_fraction": null,
+        "offset_applied": [
+          -3.712,
+          -5.435,
+          -43.431
+        ],
+        "p90_mm": 2.145,
+        "passed": true,
+        "reason": null,
+        "reference": "subject pial surface",
+        "rule": "median <= 2.0 mm; on fsaverage6 vertices by construction; registration check: 2007 subject pial vertices mapped through sphere.reg: 99.0% on the correct hemisphere side, centroid 2.93 mm from fsaverage6 pial, extent within 3.6%, affine consistency residual median 6.25 mm; left out: 69 contacts without x, y, z; 1 cortical contacts more than 3.0 mm from the pial surface"
+      }
+    }
+  },
+  "pipeline_version": "0.1.0",
+  "schema": 1
+}
