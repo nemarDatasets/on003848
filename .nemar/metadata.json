@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
-  "description": "A clinical intracranial EEG (iEEG) dataset from 12 epilepsy surgery patients drawn from the RESPect (Registry for Epilepsy Surgery Patients) collection at the University Medical Center Utrecht. It includes six intraoperative ECoG recordings and six long-term recordings (three ECoG, three SEEG). The data are organized in BIDS, with session and run conventions that capture the surgical stage or the monitoring day and time, and the task labels describe the patient's state.",
-  "methods_description": "Intraoperative ECoG was grouped into BIDS sessions by surgical situation (pre-resection, intermediate, post-resection) and grid position. Long-term monitoring recordings were grouped into sessions per monitoring period, with runs encoding the day and start time. Task labels (rest, sleep, SPESclin) describe the patient's state during each recording.",
+  "description": "This dataset contains clinical intracranial EEG (iEEG) recordings from 12 epilepsy surgery patients, part of the RESPect (Registry for Epilepsy Surgery Patients) registry at University Medical Center Utrecht. Six patients were recorded intraoperatively with acute ECoG, and six had long-term monitoring (three with ECoG, three with SEEG). The data are organized in BIDS using session and run conventions that encode the surgical situation or the monitoring day and time. The dataset also includes anatomical MRI and FreeSurfer-derived surface and segmentation files.",
+  "methods_description": "Intraoperative ECoG recordings are grouped into BIDS sessions by surgical phase (pre-resection, intermediate, post-resection) and by grid/strip position. Long-term recordings are grouped by monitoring period, with the run label encoding the day and start time. The task label describes the patient's state, such as rest, sleep, or clinical SPES.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,12 +19,12 @@
       "term": "iEEG"
     },
     {
-      "term": "Electrocorticography",
+      "term": "electrocorticography",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004831"
     },
     {
-      "term": "stereo-electroencephalography"
+      "term": "stereo-EEG"
     },
     {
       "term": "Epilepsy",
@@ -39,6 +39,12 @@
     },
     {
       "term": "long-term monitoring"
+    },
+    {
+      "term": "intraoperative ECoG"
+    },
+    {
+      "term": "SPES"
     }
   ],
   "related_identifiers": [
@@ -132,5 +138,5 @@
     ".xfm",
     ".yml"
   ],
-  "source_hash": "349b3876eb3daf64ba555e5d91e0731de5bd4356cd5df79311e34a68878885a2"
+  "source_hash": "84854f5a521f9b85c2abae7ffa83dcc00308e742256c12dbc3b64111abc73555"
 }
