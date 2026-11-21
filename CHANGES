@@ -1,3 +1,14 @@
+1.0.4 2026-10-22
+  - Correct generic event-schema task entities using existing source event-table filename tokens.
+    Retain 6 exact original schemas under sourcedata/generic-event-schemas at mirrored
+    relative paths and supply 16 exact-byte task-specific copies. No table, recording,
+    coordinate, clinical-value or ignore-rule changes.
+  - 2026-10-19 electrode locations (revised 2026-10-22): add sub-RESP0724 ses-1 coordsystem.json (Other/mm; frame not documented for this subject and stated as such in its description; units inferred; no IntendedFor) (1 files). README: section 'Electrode locations'.
+  - channels.tsv of 2 recordings = the data-file header channel list (name, order, count; matched by name): 2 rows renamed to the header name, 0 rows added, 0 rows removed, 0 files reordered. mne_bids read_raw_bids raised 'Channel mismatch'.
+  - README: section 'Channel names follow the data headers'.
+  - sub-RESP0699 ses-1: the second of two contacts named `.....` is renamed `.....-1` in electrodes.tsv, matching the channel name in its two channels.tsv (task-SPESclin and task-sleep; among the 2 rows renamed above), so every contact name in that electrodes.tsv is unique.
+  - NEMAR-computed iEEG geometry (pipeline 0.1.1): add space-fsaverage electrodes.tsv and coordsystem.json for sub-RESP0521, sub-RESP0699 and sub-RESP0724 ses-1 (6 files), on fsaverage6 vertices via each subject's FreeSurfer sphere.reg; inputs, output checksums and verification are recorded in .nemar/ieeg-geometry.json. The authors' electrodes.tsv and coordsystem.json are not changed by this step. Method: https://docs.nemar.org/data/ieeg-geometry/
+
 1.0.3 2021-11-04
   - added author who incorrectly disappeared from the co-authors list
 1.0.2 2021-10-27
